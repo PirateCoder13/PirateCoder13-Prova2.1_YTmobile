@@ -45,7 +45,8 @@ class SectionHeader extends StatelessWidget {
 }
 
 class FilterChipsBar extends StatelessWidget {
-  const FilterChipsBar({super.key, required this.items, this.selectedIndex = 0});
+  const FilterChipsBar(
+      {super.key, required this.items, this.selectedIndex = 0});
 
   final List<String> items;
   final int selectedIndex;
@@ -105,7 +106,8 @@ class VideoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final details = time.isEmpty ? '$channel · $views' : '$channel · $views · $time';
+    final details =
+        time.isEmpty ? '$channel · $views' : '$channel · $views · $time';
 
     if (compact) {
       return SizedBox(
@@ -113,7 +115,8 @@ class VideoCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _ThumbnailFrame(duration: duration, compact: true, videoId: videoId),
+            _ThumbnailFrame(
+                duration: duration, compact: true, videoId: videoId),
             const SizedBox(height: 8),
             Text(
               title,
@@ -152,7 +155,8 @@ class VideoCard extends StatelessWidget {
                 const CircleAvatar(
                   radius: 18,
                   backgroundColor: AppColors.elevated,
-                  child: Icon(Icons.person, color: AppColors.textPrimary, size: 18),
+                  child: Icon(Icons.person,
+                      color: AppColors.textPrimary, size: 18),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -163,10 +167,11 @@ class VideoCard extends StatelessWidget {
                         title,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              color: AppColors.textPrimary,
-                              fontWeight: FontWeight.w700,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.titleMedium?.copyWith(
+                                  color: AppColors.textPrimary,
+                                  fontWeight: FontWeight.w700,
+                                ),
                       ),
                       const SizedBox(height: 6),
                       Text(
@@ -192,7 +197,8 @@ class VideoCard extends StatelessWidget {
 }
 
 class _ThumbnailFrame extends StatelessWidget {
-  const _ThumbnailFrame({required this.duration, this.compact = false, this.videoId});
+  const _ThumbnailFrame(
+      {required this.duration, this.compact = false, this.videoId});
 
   final String duration;
   final bool compact;
@@ -209,22 +215,23 @@ class _ThumbnailFrame extends StatelessWidget {
             child: AspectRatio(
               aspectRatio: 16 / 9,
               child: Container(
-                  color: AppColors.elevated,
-                  alignment: Alignment.center,
-                  child: videoId == null
-                      ? const YouTubeMark()
-                      : GestureDetector(
-                          onTap: () {
-                            final url = 'https://www.youtube.com/watch?v=$videoId';
-                            launchUrlString(url);
-                          },
-                          child: Image.network(
-                            'https://img.youtube.com/vi/$videoId/hqdefault.jpg',
-                            fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => const YouTubeMark(),
-                          ),
+                color: AppColors.elevated,
+                alignment: Alignment.center,
+                child: videoId == null
+                    ? const YouTubeMark()
+                    : GestureDetector(
+                        onTap: () {
+                          final url =
+                              'https://www.youtube.com/watch?v=$videoId';
+                          launchUrlString(url);
+                        },
+                        child: Image.network(
+                          'https://img.youtube.com/vi/$videoId/hqdefault.jpg',
+                          fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => const YouTubeMark(),
                         ),
-                ),
+                      ),
+              ),
             ),
           ),
         ),
@@ -252,7 +259,8 @@ class _ThumbnailFrame extends StatelessWidget {
 }
 
 class ShortCard extends StatelessWidget {
-  const ShortCard({super.key, required this.title, required this.channel, this.videoId});
+  const ShortCard(
+      {super.key, required this.title, required this.channel, this.videoId});
 
   final String title;
   final String channel;
@@ -276,13 +284,15 @@ class ShortCard extends StatelessWidget {
                     ? const YouTubeMark(width: 42, height: 28)
                     : GestureDetector(
                         onTap: () {
-                          final url = 'https://www.youtube.com/watch?v=$videoId';
+                          final url =
+                              'https://www.youtube.com/watch?v=$videoId';
                           launchUrlString(url);
                         },
                         child: Image.network(
                           'https://img.youtube.com/vi/$videoId/hqdefault.jpg',
                           fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => const YouTubeMark(width: 42, height: 28),
+                          errorBuilder: (_, __, ___) =>
+                              const YouTubeMark(width: 42, height: 28),
                         ),
                       ),
               ),

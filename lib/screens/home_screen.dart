@@ -43,10 +43,22 @@ class HomeScreen extends StatelessWidget {
   ];
 
   static const shortsCards = [
-    ShortCard(title: 'one off Devon Larratt', channel: 'Shorts 1', videoId: 'POmX6EHaSKY'),
-    ShortCard(title: 'ALUGOU UM AUDI R8', channel: 'Shorts 2', videoId: 'nU_-zWIFTvA'),
-    ShortCard(title: 'COMO UMA SCOOTER DEVE SER TRATADA', channel: 'Shorts 3', videoId: 'JE0o5QqmcpQ'),
-    ShortCard(title: 'Aqui rampou alto hein', channel: 'Shorts 4', videoId: '4JK9coPMzhc'),
+    ShortCard(
+        title: 'one off Devon Larratt',
+        channel: 'Shorts 1',
+        videoId: 'POmX6EHaSKY'),
+    ShortCard(
+        title: 'ALUGOU UM AUDI R8',
+        channel: 'Shorts 2',
+        videoId: 'nU_-zWIFTvA'),
+    ShortCard(
+        title: 'COMO UMA SCOOTER DEVE SER TRATADA',
+        channel: 'Shorts 3',
+        videoId: 'JE0o5QqmcpQ'),
+    ShortCard(
+        title: 'Aqui rampou alto hein',
+        channel: 'Shorts 4',
+        videoId: '4JK9coPMzhc'),
   ];
 
   @override

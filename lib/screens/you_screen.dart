@@ -148,7 +148,8 @@ class YouScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: const [
-                MenuTile(icon: Icons.video_library_outlined, title: 'Seus vídeos'),
+                MenuTile(
+                    icon: Icons.video_library_outlined, title: 'Seus vídeos'),
                 MenuTile(icon: Icons.download_outlined, title: 'Downloads'),
                 MenuTile(icon: Icons.school_outlined, title: 'Cursos'),
               ],
