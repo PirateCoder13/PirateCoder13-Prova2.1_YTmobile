@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   static const videoCards = [
     VideoCard(
       title: 'BMW E39 POV Street Drifting at 1AM',
-      channel: 'Canal Exemplo 1',
+      channel: 'RWDPOV',
       views: '120 mil visualizações',
       time: 'há 2 dias',
       duration: '12:34',
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
     ),
     VideoCard(
       title: 'O desafio da resina: morango e carne',
-      channel: 'Canal Exemplo 2',
+      channel: 'Manual do Mundo',
       views: '89 mil visualizações',
       time: 'há 5 dias',
       duration: '08:21',
@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
     ),
     VideoCard(
       title: 'PLATAFORMA PCR 50Km, AREA RESTRITA',
-      channel: 'Canal Exemplo 3',
+      channel: 'Pesca em Ação 🐟',
       views: '45 mil visualizações',
       time: 'há 1 semana',
       duration: '16:02',
@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
     ),
     VideoCard(
       title: 'I Found the Source of the Amazon River',
-      channel: 'Canal Exemplo 4',
+      channel: 'thePOVchannel',
       views: '31 mil visualizações',
       time: 'há 8 dias',
       duration: '09:47',
@@ -45,19 +45,19 @@ class HomeScreen extends StatelessWidget {
   static const shortsCards = [
     ShortCard(
         title: 'one off Devon Larratt',
-        channel: 'Shorts 1',
+        channel: 'Power Arm',
         videoId: 'POmX6EHaSKY'),
     ShortCard(
         title: 'ALUGOU UM AUDI R8',
-        channel: 'Shorts 2',
+        channel: 'Momentos Backstage',
         videoId: 'nU_-zWIFTvA'),
     ShortCard(
         title: 'COMO UMA SCOOTER DEVE SER TRATADA',
-        channel: 'Shorts 3',
+        channel: 'WDX',
         videoId: 'JE0o5QqmcpQ'),
     ShortCard(
         title: 'Aqui rampou alto hein',
-        channel: 'Shorts 4',
+        channel: 'RG shorts BR',
         videoId: '4JK9coPMzhc'),
   ];
 
